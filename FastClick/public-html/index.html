@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Click</title>
+</head>
+<body>
+    <h1>Fast Click</h1>
+    <h3 id="counter"></h3>
+    <button id="increaseButton">click</button>
+    <button id="resetButton">reset</button>
+    <p id="flag"></p>
+    <script>
+        let count = 0;
+        const limit = 20;
+        const duration = 2050;
+        let gameActive = true;
+ 
+        const counterElement = document.getElementById('counter');
+        const clickButton = document.getElementById('increaseButton');
+        const resetButton = document.getElementById('resetButton');
+        const flagElement = document.getElementById('flag');
+ 
+        const startGame = () => {
+            flagElement.textContent = '';
+            count = 0;
+            counterElement.textContent = count;
+            gameActive = true;
+ 
+            setTimeout(() => {
+                gameActive = false;
+                flagElement.textContent = '--- GAME END ---'
+                if (count >= limit) {
+                    flagElement.textContent = 'RaidersCTF{Y0ur_w1n_c0ngrats!}';
+                }
+            }, duration)
+        }
+ 
+        increaseButton.addEventListener('click', () => {
+            if (gameActive) {
+                count++;
+                counterElement.textContent = count;
+                if (count >= limit) {
+                    gameActive = false;
+                    flagElement.textContent = 'RaidersCTF{Y0ur_w1n_c0ngrats!}';
+                }
+            }
+        });
+ 
+        resetButton.addEventListener('click', () => {
+            location.reload();
+        })
+ 
+        startGame();
+    </script>
+</body>
+</html>
