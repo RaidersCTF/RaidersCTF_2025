@@ -16,10 +16,8 @@ RaidersCTF{Welcome_to_RaidersCTF!}
 ## Points
 - `1`
 
-<details>
-  <summary>## Writeup</summary>
-  `右クリック -> ページソースを表示` をすることで簡単にFlagが取得できる。
-</details>
+## Writeup
+`右クリック -> ページソースを表示` をすることで簡単にFlagが取得できる。
 
 ## Author
 - `jhsand`
