@@ -1,0 +1,22 @@
+body{
+  background-color: rgb(142, 255, 110);
+}
+button[disabled] {
+  opacity: 1;
+  background-color: black;
+  color: white;
+  box-shadow: 10px 5px 5px red;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+table {
+  table-layout: fixed;
+  width: 300px;
+  margin: 0 auto;
+}
+div{
+  text-align: center;
+}

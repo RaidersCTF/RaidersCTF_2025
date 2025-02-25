@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    container_name: apache_php_container
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/var/www/html
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
