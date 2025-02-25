@@ -11,7 +11,7 @@ nc IP 5000
 
 ## Flag
 ```
-RaidersCTF{C43sar_c1ph3r}
+RaidersCTF{c4n_y0u_w1n_th3_g4m3}
 ```
 
 ## Points
