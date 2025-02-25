@@ -1,23 +1,23 @@
 # web: Fast Click
 ## Question
 
-RaidersCTF 2025 へようこそ！🎉
-いっぱい楽しんでもらえると幸いです！
-[FlagはDiscordのどこかに隠れているよ](https://discord.com/invite/ha2Tdum3WC)
+さあ、早押し対決といこうか
 
 ## Difficulty
-- `welcome`
+- `easy`
 
 ## Flag
 ```
-RaidersCTF{Welcome_to_RaidersCTF!}
+RaidersCTF{Y0ur_w1n_c0ngrats!}
 ```
 
 ## Points
-- `1`
+- `100`
 
 ## Writeup
-`右クリック -> ページソースを表示` をすることで簡単にFlagが取得できる。
+制限時間内に20回以上ボタンを押してゲームクリアすることでFlagが表示される。
+
+または、`右クリック -> ページソースを表示` をすることで簡単にFlagが取得できる。
 
 ## Author
 - `jhsand`
