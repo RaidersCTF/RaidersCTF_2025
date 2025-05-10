@@ -7,7 +7,7 @@
 
 ### Author
 
-- [towa](https://github.com/GitTOWA)
+- [towa](https://github.com/towaos)
 - [kmjak](https://github.com/kmjak)
 - [saryu](https://github.com/KENKUN-1031)
 - [jhsand](https://github.com/JHSAND)
